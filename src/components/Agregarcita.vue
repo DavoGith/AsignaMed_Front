@@ -51,7 +51,7 @@ export default {
   //paciente: localStorage.getItem("username"),
   data: function() {
     return {
-      createAgragarcita: {
+      createAgregarcita: {
         paciente: localStorage.getItem("username"),
         fechaCita: "",
         horaCita: "",
@@ -113,9 +113,9 @@ export default {
         .then((result) => {
           alert("Cita agendada, Revise Historial de citas");
         })
-        .catch((error) => {
+        /*.catch((error) => {
           alert("No hay medico disponible para esta fecha");
-        });
+        });*/
     },
   },
 };

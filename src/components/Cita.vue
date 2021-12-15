@@ -22,7 +22,7 @@
 
             <tr v-for="cita in citaByPaciente" :key="cita.id">
                 <td>{{ cita.paciente }}</td>
-                <td>{{ cita.fechaCita.date }}</td>
+                <td>{{ cita.fechaCita.date.substring(0, 10)}}</td>
                 <td>{{ cita.horaCita }}</td>
                 <td>{{ cita.medico }}</td>
                 <td>{{ cita.especialidad }} </td>
